@@ -19,8 +19,6 @@ footer {
     text-align: center;
 }
 
-
-
 .logo {
     float: left;
     font-size: 40px;
@@ -29,56 +27,23 @@ footer {
 
 /* Cart */
 
-.cart {
-    width: 50%;
-    height: 100%;
-    
-    border-style: solid;
-    justify-content: space-between;
-    background-color: #fff;
- 
-}
-.cart-items {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.cart-items div {
-    border-style: solid;
-    flex: 1 0 100%;  /* Each div takes up 100% of the column*/
-}
-
-.cart-row {
-    flex: 1 0 100%;  /* Each div takes up 100% of the row*/
-}
-/*---------------------------------*/
+/*---------------------------------  align-items-center align-items-center justify-content-center*/
 /* 
 Ticket
 */
-.flex-row-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: space-between;
-}
-.section-grid {
-    height: 800px;
+.test-border {
     border-style: solid;
-    flex-wrap: wrap;
-    text-align: center;
+}
+.tb {
+    border-style: solid;
 }
 
 .ticket {
-    width: 25%;
-    height: 100%;
-    
-    border-style: solid;
-    
-    gap: 25px;  /* Add gaps to rows of flex box */
-    background-color: #fff;
-   
+    text-align: center;
+    /* gap: 25px;  /* Add gaps to rows of flex box */
+    min-width: 320px;
+    max-width: 320px;
 }
-
 .ticket-header {
     height: 76px;
     background: #00abe4;
@@ -86,45 +51,53 @@ Ticket
     color: #fff;
     font-family: GrilledCheese,Helvetica-Light,Helvetica,Arial,sans-serif;
 }
-.ticket-row { 
-    flex: 1 0 100%;  /* Each div takes up 100% of the row*/
-}
-/*--------------- Price Section ------------------*/
-.price-info {
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.price-info-child {
-    float: left;
-    width: 50%;
-}
-    
-.price-info-adult {
-    float: right;
-    width: 50%;
-}
-.price-amount {
-    font-size: 35px;
+.ticket-description {
+    text-align: left;
+    min-height: 300px;
+    height: auto;
 }
 .ticket-img-section {
-   height: 150px;
-
-}
-.ticket-img {
+    height: 150px;
+ }
+ .ticket-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+.ticket-button {
+    display: block;
+    height: 60px;
+    background: #e30613;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 24px;
+    width: 100%;
+    /* align element with bottom of ticket */
+    position : absolute;
+    bottom   : 0;
+    /* margin-top: auto; */
+}
+
+.ticket-row {
+    height: 900px;
+}
+/* .canvas {
+    height: 900px;
+} */
+/*--------------- Cart Section ------------------*/
+.cart {
+    height: 100%;
+}
+/*--------------- Price Section ------------------*/
+
+
+
 p {
   
     font-size: 40px; 
 }
-.ticket-description {
-    text-align: left;
-    min-height: 300px;
-    height: auto; 
-}
+
 
 /* Add spacing to the elements of the list */
 
@@ -135,16 +108,7 @@ p {
 div {
     display: block;
 }
-.ticket-button {
-    display: block;
-    height: 60px;
-    background: #e30613;
-    color: #fff;
-    cursor: pointer;
-    line-height: 1;
-    font-size: 24px;
-    margin-top: auto; /* align element with bottom of ticket */
-}
+
 .center_text_box {
     display: inline-flex;
     flex-direction: column;
